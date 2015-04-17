@@ -28,9 +28,9 @@ In this example we'll use tcp-to-tls and connect to example.com on port 443 wher
 
 ## Keeping it running
 
-If want this to be running all the time and you are running Ubuntu, there is an upstart service sample you can copy to `/etc/init/tcp-to-tls.conf` and then start it with `sudo service tcp-to-tls start`.
+If want this to be running all the time and you are running Ubuntu, there is [an upstart service sample](https://github.com/joaojeronimo/tcp-to-tls/blob/master/upstart.conf) you can copy to `/etc/init/tcp-to-tls.conf` and then start it with `sudo service tcp-to-tls start`.
 
-If you are running a systemd based Linux distribution, then copy the systemd service sample to `/lib/systemd/system/tcp-to-tls.service` and start it with `sudo systemctl start tcp-to-tls`.
+If you are running a systemd based Linux distribution, then copy the [systemd service sample](https://github.com/joaojeronimo/tcp-to-tls/blob/master/systemd.service) to `/lib/systemd/system/tcp-to-tls.service` and start it with `sudo systemctl start tcp-to-tls`.
 
 Rember to change the arguments in both scripts to make them connect to your desired host and port.
 
