@@ -1,0 +1,9 @@
+[Unit]
+Description=example tcp-to-tls upstart service
+
+[Service]
+ExecStart=/usr/local/bin/tcp-to-tls -host="example.com" -port=443
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
