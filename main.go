@@ -13,7 +13,7 @@ func main() {
 	remoteHost := flag.String("host", "", "Remote host to connect. Mandatory.")
 	remotePort := flag.Int("port", 0, "Remote port to connect. Mandatory.")
 	localInteface := flag.String("interface", "", "Local interface to bind to. Defaults to every interface available.")
-	localPort := flag.Int("local-port", *remotePort-1, "Remote port to bind to. Defaults to port-1.")
+	localPort := flag.Int("local-port", 8888, "Remote port to bind to. Defaults to port-1.")
 	InsecureSkipVerify := flag.Bool("insecure-skip-verify", false, "Skip verification of server's certificate chain and host name")
 	flag.Parse()
 
