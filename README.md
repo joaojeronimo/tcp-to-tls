@@ -18,8 +18,8 @@ For every tcp connection it gets, it opens a TLS connection and pipes the input 
 
 In this example we'll use tcp-to-tls and connect to example.com on port 443 where this [example website](https://example.com) is served. Then we use curl to retrieve it from [http://localhost:9001](http://localhost:8888). Notice that we will get it using HTTP instead of HTTPS (because tcp-to-tls took care of wrapping the connection in TLS).
 
-    tcp-to-tls -host="example.com" -port=443 &
-    curl http://localhost:8888 -H "Host: example.com"
+    $ tcp-to-tls -host="example.com" -port=443 &
+    $ curl http://localhost:8888 -H "Host: example.com"
 
 ## Installing
 
