@@ -6,3 +6,6 @@ install:
 
 clean:
 	rm tcp-to-tls
+
+remove:
+	rm /usr/local/bin/tcp-to-tls
